@@ -1,4 +1,5 @@
-import React, {  } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   React.useEffect(() => {
@@ -19,7 +20,7 @@ const Header = () => {
                            
                             <div className="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div className="logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""/></a>
+                                  <Link to="/"><img src="assets/img/logo/logo.png" alt=""/></Link>
                                 </div>
                             </div>
                             <div className="col-xl-6 col-lg-8 col-md-7 col-sm-5">
@@ -27,8 +28,8 @@ const Header = () => {
                                 <div className="main-menu f-right d-none d-lg-block">
                                     <nav>                                                
                                         <ul id="navigation">                                                                                                                                     
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="Catagori.html">Catagori</a></li>
+                                            <li><Link to="/">Home</Link></li>
+                                            <li><a href="Catagori.html">Catagory</a></li>
                                             <li className="hot"><a href="#">Latest</a>
                                                 <ul className="submenu">
                                                     <li><a href="product_list.html"> Product list</a></li>
